@@ -1,0 +1,32 @@
+name: Update Submodules
+
+on:
+  workflow_dispatch: # 수동 실행
+  schedule:
+    - cron: "0 0 * * *" # 매일 자정 자동 실행
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: recursive
+
+      - name: Configure git
+        run: |
+          git config --global user.name "Jeongseop Lim"
+          git config --global user.email "jseoplim@gmail.com"
+
+      - name: Update submodules to latest commits
+        run: |
+          git submodule update --remote --recursive
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "feat: Update submodules to latest commits"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi

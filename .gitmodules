@@ -1,3 +1,6 @@
 [submodule "xai613-reinforcement-learning"]
 	path = xai613-reinforcement-learning
 	url = https://github.com/jseop-lim/xai613-reinforcement-learning
+[submodule "aaa616-program-analysis"]
+	path = aaa616-program-analysis
+	url = https://github.com/jseop-lim/aaa616-program-analysis

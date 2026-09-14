@@ -4,3 +4,9 @@
 [submodule "aaa616-program-analysis"]
 	path = aaa616-program-analysis
 	url = https://github.com/jseop-lim/aaa616-program-analysis
+[submodule "aaa528-computational-logic-project"]
+	path = aaa528-computational-logic-project
+	url = https://github.com/jseop-lim/aaa528-computational-logic-project
+[submodule "aaa551-programming-language-theory"]
+	path = aaa551-programming-language-theory
+	url = https://github.com/jseop-lim/aaa551-programming-language-theory

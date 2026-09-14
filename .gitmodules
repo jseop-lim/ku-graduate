@@ -10,3 +10,6 @@
 [submodule "aaa551-programming-language-theory"]
 	path = aaa551-programming-language-theory
 	url = https://github.com/jseop-lim/aaa551-programming-language-theory
+[submodule "aaa705-software-testing-and-quality-assurance"]
+	path = aaa705-software-testing-and-quality-assurance
+	url = https://github.com/jseop-lim/aaa705-software-testing-and-quality-assurance
